@@ -1,0 +1,18 @@
+<div class="clear">
+  {{#each posts}}
+  {{#if images.l.url}}
+    <div class="square">
+        <div class="content">
+            <div class="table">
+                <a 
+                    class="table-cell"
+                    href="/{{nid}}" 
+                    style="background-image:url({{ images.l.url}})">
+                    <div class="title">{{ title }}</div>
+                </a>
+            </div>
+        </div>
+    </div>
+  {{/if}}
+  {{/each}}
+</div>
